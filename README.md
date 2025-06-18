@@ -72,6 +72,30 @@ Untuk menjalankan proyek ini, ikuti langkah-langkah berikut:
 4. **Menjalankan Notebook**
    - Buka notebook `notebook.ipynb` dan jalankan sel-sel secara berurutan untuk melakukan analisis data, pelatihan model, dan penyimpanan model.
 
+   ### Menyiapkan Metabase
+
+Metabase digunakan untuk visualisasi data dan dijalankan melalui Docker pada port 3000. Pastikan Docker sudah terinstal di sistem Anda.
+
+1. **Jalankan perintah berikut untuk menjalankan Metabase:**
+   ```
+   docker run -d -p 3000:3000 metabase/metabase
+   ```
+   Ini akan mengunduh image Metabase dan menjalankannya sebagai container.
+
+2. **Akses Metabase melalui browser:**
+   Buka [http://localhost:3000](http://localhost:3000) dan sambungkan ke database Supabase sesuai kebutuhan proyek.
+
+   ### Langkah Awal Tambahan
+
+- **Clone repository proyek:**
+  ```
+  git clone <URL_REPOSITORY_PROYEK>
+  ```
+  Ganti `<URL_REPOSITORY_PROYEK>` dengan URL repository Anda.
+- **Pastikan semua dependensi terinstal dan Metabase telah tersambung dengan database.**
+
+---
+
 ## Business Dashboard
 
 Dashboard bisnis telah dikembangkan untuk memberikan wawasan kepada pemangku kepentingan perusahaan mengenai metrik kunci terkait status mahasiswa. Dashboard ini terintegrasi dalam aplikasi Streamlit dan mencakup:
@@ -87,6 +111,63 @@ Dashboard bisnis telah dikembangkan untuk memberikan wawasan kepada pemangku kep
 - **Evaluasi Model:**
   - Metrik performa model machine learning (akurasi, precision, recall, AUC-ROC).
   - Confusion matrix untuk model terbaik.
+
+## Informasi Tambahan: Statistik dan Ringkasan Data Mahasiswa
+
+Berikut adalah ringkasan utama dan statistik dasar mahasiswa yang relevan dengan proyek ini, yang dapat digunakan untuk memahami konteks data yang dianalisis:
+
+### 📊 Ringkasan Utama
+
+| **Keterangan**       | **Nilai** |
+|----------------------|-----------|
+| Total Mahasiswa      | 4.424     |
+| Total Drop Out       | 1.421     |
+| Rate Drop Out        | 32.12%    |
+| Graduated Student    | 2.209     |
+| Student Active       | 794       |
+
+### 📌 Statistik Dasar Mahasiswa
+
+- **Jumlah Pria:** 1.556  
+- **Jumlah Wanita:** 2.868  
+- **Rata-rata Usia Masuk:** 23.27 tahun  
+- **Rata-rata Nilai Masuk:** 126.98  
+- **Jumlah Penerima Beasiswa:** 1.099  
+
+### 🧩 Status Pendidikan Mahasiswa (Grouped by Status)
+
+- **Graduate:** 49.9%  
+- **Dropout:** 32.1%  
+- **Enrolled (Aktif):** 17.9%  
+
+### 💍 Distribusi Status Pernikahan Mahasiswa
+
+- **Single:** Mayoritas  
+- **Married, Divorced, Widowed:** Minoritas  
+
+### 💰 Analisis Status Ekonomi (Debtor)
+
+- **Status Hutang vs Jumlah Mahasiswa:**
+  - Tidak Memiliki Hutang: 3.921 (88.6%)  
+  - Memiliki Hutang: 503 (11.4%)  
+- **Rata-rata Nilai Masuk:**
+  - Tanpa Hutang: 127.05  
+  - Dengan Hutang: 126.4  
+- **Status Hutang vs Penerima Beasiswa:**
+  - Mayoritas penerima beasiswa berasal dari mahasiswa tanpa hutang.
+
+### 🌍 Mahasiswa Internasional
+
+- **Mahasiswa Lokal:** 97.51%  
+- **Mahasiswa Internasional:** 2.49%  
+
+### 🎂 Distribusi Umur Mahasiswa
+
+- **< 20 tahun:** Paling banyak  
+- **20–25 tahun:** Signifikan  
+- **26–35+ tahun:** Relatif sedikit  
+
+---
 
 
 **Link Dashboard:**  
