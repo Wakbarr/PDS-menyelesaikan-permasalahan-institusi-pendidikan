@@ -185,7 +185,7 @@ Prototype sistem machine learning telah dikembangkan menggunakan Streamlit dan d
 
 ### 🔗 Akses Online (Prototype)
 Klik link berikut untuk mencoba prototype yang telah dideploy:  
-🌐 [Akses Prototype di Streamlit Cloud](https://pds-menyelesaikan-permasalahan-institusi-pendidikan-r6hex2iyxy.streamlit.app/)
+🌐 [Akses Prototype di Streamlit Cloud](https://wakbarrpds2.streamlit.app/)
 
 ### Menjalankan Secara Lokal
 Untuk menjalankan prototype secara lokal, ikuti langkah-langkah berikut:
